@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipbook</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="page-info">Página: <span id="current-page">1</span></div>
+    <div id="flipbook-container">
+        <img id="flipbook-image" src="images/Pag_1.png" alt="Página del Flipbook">
+    </div>
+    <div id="menu-container">
+        <h2>Seleccionar Audio</h2>
+        <ul id="audio-list">
+            <li><a href="#" data-audio="Leccion1.mp3">Leccion 1</a></li>
+            <li><a href="#" data-audio="Leccion2.mp3">Leccion 2</a></li>
+            <li><a href="#" data-audio="Leccion3.mp3">Leccion 3</a></li>
+            <li><a href="#" data-audio="Leccion4.mp3">Leccion 4</a></li>
+            <li><a href="#" data-audio="Leccion5.mp3">Leccion 5</a></li>
+            <li><a href="#" data-audio="Leccion6.mp3">Leccion 6</a></li>
+            <li><a href="#" data-audio="Leccion7.mp3">Leccion 7</a></li>
+            <li><a href="#" data-audio="Leccion8.mp3">Leccion 8</a></li>
+            <li><a href="#" data-audio="Leccion9.mp3">Leccion 9</a></li>
+            <li><a href="#" data-audio="Leccion10.mp3">Leccion 10</a></li>
+            <li><a href="#" data-audio="Leccion11.mp3">Leccion 11</a></li>
+            <li><a href="#" data-audio="Leccion12.mp3">Leccion 12</a></li>
+            <li><a href="#" data-audio="Leccion13.mp3">Leccion 13</a></li>
+            <li><a href="#" data-audio="Leccion14.mp3">Leccion 14</a></li>
+            <li><a href="#" data-audio="Leccion15.mp3">Leccion 15</a></li>
+            <li><a href="#" data-audio="Leccion16.mp3">Leccion 16</a></li>
+            <li><a href="#" data-audio="Leccion17.mp3">Leccion 17</a></li>
+            <li><a href="#" data-audio="Leccion18.mp3">Leccion 18</a></li>
+            <li><a href="#" data-audio="Leccion19.mp3">Leccion 19</a></li>
+            <li><a href="#" data-audio="Leccion20.mp3">Leccion 20</a></li>
+            <li><a href="#" data-audio="Leccion21.mp3">Leccion 21</a></li>
+            <li><a href="#" data-audio="Leccion22.mp3">Leccion 22</a></li>
+            <li><a href="#" data-audio="Leccion23.mp3">Leccion 23</a></li>
+            <li><a href="#" data-audio="Leccion24.mp3">Leccion 24</a></li>
+            <li><a href="#" data-audio="Leccion25.mp3">Leccion 25</a></li>
+            <li><a href="#" data-audio="Leccion26.mp3">Leccion 26</a></li>
+            <li><a href="#" data-audio="Leccion27.mp3">Leccion 27</a></li>
+            <li><a href="#" data-audio="Leccion28.mp3">Leccion 28</a></li>
+            <li><a href="#" data-audio="Leccion29.mp3">Leccion 29</a></li>
+            <li><a href="#" data-audio="Leccion30.mp3">Leccion 30</a></li>
+            
+        </ul>
+        <audio id="audio-player" controls>
+            <source id="audio-source" src="" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+    </div>
+    <div id="controls-container">
+        <button id="prev">«</button>
+        <button id="next">»</button>
+        <div id="page-input-container">
+            <input type="number" id="page-number" min="1" step="1" placeholder="Página">
+            <button id="go-to-page"><i class="fa fa-search"></i></button>
+            <span id="error-message">Número de página no válido</span>
+        </div>
+        <div id="zoom-controls">
+            <button id="zoom-in">+</button>
+            <button id="zoom-out">-</button>
+            <div id="zoom-slider-container">
+                <input type="range" id="zoom-slider" min="100" max="300" value="100">
+                <span id="zoom-percentage">100%</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+  
